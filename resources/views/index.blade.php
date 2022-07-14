@@ -23,7 +23,7 @@
 
 
     <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Sistema de riego</a>
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="{{ route('home') }}">Sistema de riego</a>
         <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -120,7 +120,7 @@
                                 <a class="btn btns-panel" href="{{ route('plantas') }}">Examinar plantas</a>
                             </div>
                             <div class="col-md-3 col-sm-12 text-center">
-                                <a class="btn btns-panel" href="{{ route('pronosticos') }}">Examinar sensores</a>
+                                <a class="btn btns-panel" href="{{ route('sensores') }}">Examinar sensores</a>
                             </div>
                         </div>
                     </div>
