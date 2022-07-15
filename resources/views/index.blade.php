@@ -70,7 +70,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('sensores') }}">
 
-                                    Control de sensores
+                                    
 
                                 </a>
                             </li>

@@ -23,4 +23,4 @@ Route::get('/pronosticos', [ViewController::class, 'ViewPronostico'])->name('pro
 Route::get('/sensores', [ViewController::class, 'ViewSensores'])->name('sensores')->middleware('user');
 Route::get('/logout', [ViewController::class, 'Logout'])->name('logout')->middleware('user');
 Route::get('/login', [ViewController::class, 'ViewLogin'])->name('login');
-Route::get('/ini-sesion', [UserController::class, 'login'])->name('ini-sesion');
+Route::post('/ini-sesion', [UserController::class, 'login'])->name('ini-sesion');

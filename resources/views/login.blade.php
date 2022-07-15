@@ -39,8 +39,9 @@
             <span style="color:red;">{{$msgErr ?? '' }}</span>
             <div class="card bg-light" >
                 <div class="card-body">
-                  <form class="row g-3 needs-validation" action="{{ route('ini-sesion')}}">
-                    
+              
+                  <form class="row g-3 needs-validation" action="{{ route('ini-sesion')}}" method="POST">
+                    @csrf
                     <div class="col-12">
                       <label for="validationCustomUsername" class="form-label h6">Correo</label>
                       <div class="input-group">

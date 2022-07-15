@@ -1,8 +1,13 @@
 @extends('index')
 @section('contenido')
 <br>
-<br>
 <div class="row">
+   <div class="col-12 text-center">
+      <h6>Plantas</h6>
+      <br>
+      <br>
+      <br>
+  </div>
     <div class="col-md-3 col-sm-6 text-center">
        <div class="card">
         <img src="{{ asset('imagenes/plantas/cafe.jpg') }}" class="img-fluid img-thumbnail" alt="Planta de café" srcset=""> 

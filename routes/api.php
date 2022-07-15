@@ -19,4 +19,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/api-plantas', [ApiController::class, 'listaAPI'])->name('api-plantas');
+Route::get('/plantas', [ApiController::class, 'listaAPI'])->name('plantas');
+Route::get('/login', [ApiController::class, 'LoginAPI'])->name('login');
+
