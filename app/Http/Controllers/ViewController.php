@@ -44,4 +44,15 @@ class ViewController extends Controller
         $minibomba = $this->datos->getStateSensor('minibomba');
         return view('sensores', compact('higrometro', 'sen_lumi','minibomba' ));
     }
+
+    public function ViewLogin()
+    {
+        return view('login');
+    }
+
+    public function Logout()
+    {
+        session()->flush();
+        return view('login');
+    }
 }

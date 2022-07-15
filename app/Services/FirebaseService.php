@@ -43,4 +43,26 @@ class FirebaseService
         $sens = $reference->getValue();
         return $sens;
     }
+
+    public function addUser($email, $password, $displayName)
+    {
+        $auth = $this->firebase->createAuth();
+        $userProperties = [
+            'email' => $email,
+            'emailVerified' => false,
+            'password' => $password,
+            'displayName' => $displayName,
+        ];
+        return $auth->createUser($userProperties);
+         
+    }
+
+    public function signIn($email, $password)
+    {
+        $auth = $this->firebase->createAuth();
+        $signInResult = $auth->signInWithEmailAndPassword($email, $password);
+        $email = $signInResult->data()['email'];
+        
+        return $email;
+    }
 }

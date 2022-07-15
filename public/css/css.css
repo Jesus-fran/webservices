@@ -65,3 +65,16 @@
 .img-sensores {
     height: 180px;
 }
+
+.row_login {
+    height: 89.5vh;
+    /* background-color: rgba(91, 189, 140, 0.932); */
+}
+
+.form-login {
+    background-color: rgba(91, 189, 140, 0.932);
+}
+
+.col-login {
+    margin-top: 16vh;
+}

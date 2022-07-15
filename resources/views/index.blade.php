@@ -40,66 +40,71 @@
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="position-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
 
-                                Panel principal
+        @section('contenido_gnrl')
+            <div class="row">
+
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                    <div class="position-sticky pt-3">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
+
+                                    Panel principal
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('plantas') }}">
+
+                                    Plantas
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('sensores') }}">
+
+                                    Control de sensores
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('sensores') }}">
+
+                                    Control de sensores
+
+                                </a>
+                            </li>
+                        </ul>
+
+                        <h6
+                            class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                            <span>Estadisticas</span>
+                            <a class="link-secondary" href="#" aria-label="Add a new report">
+                                <span data-feather="plus-circle"></span>
                             </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('plantas') }}">
+                        </h6>
+                        <br>
+                        <ul class="nav flex-column mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">
+                                    <span data-feather="file-text"></span>
+                                    Reportes de plantas
+                                </a>
+                            </li>
+                            <br><br>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('logout') }}">
+                                    <span data-feather="file-text"></span>
+                                    Cerrar sesión
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
 
-                                Plantas
 
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('sensores') }}">
-
-                                Control de sensores
-
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('sensores') }}">
-
-                                Control de sensores
-
-                            </a>
-                        </li>
-                    </ul>
-
-                    <h6
-                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Estadisticas</span>
-                        <a class="link-secondary" href="#" aria-label="Add a new report">
-                            <span data-feather="plus-circle"></span>
-                        </a>
-                    </h6>
-                    <br>
-                    <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span data-feather="file-text"></span>
-                                Reportes de plantas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">
-                                <span data-feather="file-text"></span>
-                                Reportes de componentes
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!-- Contenido -->
-            <main class="col-md-9 ms-sm-auto col-lg-10 contenido">
+                <!-- Contenido -->
+                <main class="col-md-9 ms-sm-auto col-lg-10 contenido">
 
                 @section('contenido')
                     <div class="row home_banner">
@@ -127,7 +132,8 @@
                 @show
             </main>
         </div>
-    </div>
+    @show
+</div>
 
 </body>
 
