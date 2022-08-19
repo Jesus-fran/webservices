@@ -45,7 +45,8 @@
 }
 
 .btns-panel {
-    background-color: rgba(91, 189, 140, 0.932);
+    /* background-color: rgba(91, 189, 140, 0.932); */
+    background-color: #1abc9c;
 }
 
 .btns-panel:hover {
@@ -106,4 +107,8 @@
 .link-aviso-priv {
     font-size: 10pt;
     text-decoration: none;
+}
+
+.btn-login {
+    background-color: #1abc9c;
 }
