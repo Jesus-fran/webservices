@@ -102,3 +102,8 @@
 .text-aviso {
     text-align: justify;
 }
+
+.link-aviso-priv {
+    font-size: 10pt;
+    text-decoration: none;
+}
