@@ -123,10 +123,10 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-3 col-sm-12 offset-md-3 text-center">
-                                    <a class="btn btns-panel  hvr-hang" href="{{ route('plantas') }}">Examinar plantas</a>
+                                    <a class="btn btns-panel btn-login hvr-hang" href="{{ route('plantas') }}">Examinar plantas</a>
                                 </div>
                                 <div class="col-md-3 col-sm-12 text-center">
-                                    <a class="btn btns-panel hvr-hang" href="{{ route('sensores') }}">Examinar sensores</a>
+                                    <a class="btn btns-panel btn-login hvr-hang" href="{{ route('sensores') }}">Examinar sensores</a>
                                 </div>
                             </div>
                         </div>

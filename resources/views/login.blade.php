@@ -61,7 +61,7 @@
                     </div>
                     
                     <div class="col-12">
-                      <button class="btn btn-success" type="submit">Ingresar</button>
+                      <button class="btn btn-login  hvr-hang " type="submit">Ingresar</button>
                     </div>
                     <div class="col-12">
                       <a href="{{ route('aviso-privacidad') }}" class="link-aviso-priv">Aviso de privacidad</a> <br> y <br> <a href="" class="link-aviso-priv">Terminos de uso</a>
