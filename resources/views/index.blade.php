@@ -17,6 +17,7 @@
         crossorigin="anonymous"></script>
     <link rel="icon" type="image/jpg" href="{{ asset('favicon.ico') }}" />
     <link rel="stylesheet" href="{{ asset('css/css.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/hover.css') }}">
 </head>
 
 <body>
@@ -44,24 +45,24 @@
         @section('contenido_gnrl')
             <div class="row">
 
-                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                     <div class="position-sticky pt-3">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ route('home') }}">
+                                <a class="nav-link active  hvr-underline-from-left" aria-current="page" href="{{ route('home') }}">
 
                                     Panel principal
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('plantas') }}">
+                                <a class="nav-link  hvr-underline-from-left" href="{{ route('plantas') }}">
 
                                     Plantas
 
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('sensores') }}">
+                                <a class="nav-link  hvr-underline-from-left" href="{{ route('sensores') }}">
 
                                     Control de sensores
 
@@ -86,14 +87,14 @@
                         <br>
                         <ul class="nav flex-column mb-2">
                             <li class="nav-item">
-                                <a class="nav-link" href="">
+                                <a class="nav-link  hvr-underline-from-left" href="">
                                     <span data-feather="file-text"></span>
                                     Reportes de plantas
                                 </a>
                             </li>
                             <br><br>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('logout') }}">
+                                <a class="nav-link  hvr-underline-from-left" href="{{ route('logout') }}">
                                     <span data-feather="file-text"></span>
                                     Cerrar sesión
                                 </a>
@@ -106,33 +107,77 @@
                 <!-- Contenido -->
                 <main class="col-md-9 ms-sm-auto col-lg-10 contenido">
 
-                @section('contenido')
-                    <div class="row home_banner">
-                        <div class="row">
-                            <div class="col-4 offset-4 text-center d-md-block d-none">
-                                <br>
-                                <br>
-                                <br>
-                                <h6>¡Bienvenido, ya puedes monitorear tus plantas!</h6>
+                    @section('contenido')
+                        <div class="row home_banner">
+                            <div class="row">
+                                <div class="col-4 offset-4 text-center d-md-block d-none">
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <h6>¡Bienvenido, ya puedes monitorear tus plantas!</h6>
+                                </div>
+                                <div class="col-sm-12 text-center d-md-none d-sm-block">
+                                    <br>
+                                    <h6>¡Bienvenido, ya puedes monitorear tus plantas!</h6>
+                                </div>
                             </div>
-                            <div class="col-sm-12 text-center d-md-none d-sm-block">
-                                <br>
-                                <h6>¡Bienvenido, ya puedes monitorear tus plantas!</h6>
+                            <div class="row">
+                                <div class="col-md-3 col-sm-12 offset-md-3 text-center">
+                                    <a class="btn btns-panel  hvr-hang" href="{{ route('plantas') }}">Examinar plantas</a>
+                                </div>
+                                <div class="col-md-3 col-sm-12 text-center">
+                                    <a class="btn btns-panel hvr-hang" href="{{ route('sensores') }}">Examinar sensores</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-12 offset-md-3 text-center">
-                                <a class="btn btns-panel" href="{{ route('plantas') }}">Examinar plantas</a>
-                            </div>
-                            <div class="col-md-3 col-sm-12 text-center">
-                                <a class="btn btns-panel" href="{{ route('sensores') }}">Examinar sensores</a>
-                            </div>
-                        </div>
+                    @show
+                </main>
+            </div>
+        @show
+    </div>
+
+    <footer class="navbar footer">
+        <div class="container">
+            <div class="row" style="width: 100%">
+                <div class="col-12 gy-4">
+                    <span class="d-block p-1 line-foot text-white"></span>
+                </div>
+                <div class="col-4 text-center text-dark">
+                    <h6>EMPRESA</h6>
+                    <div class="col text-center">
+                        <ul>
+                            <li><a href="{{ route('aviso-privacidad') }}">Conoce nuestro aviso de privacidad</a></li>
+                            <li><a href="">Terminos y condiciones</a></li>
+                            <li><a href="">Sobre nosotros</a></li>
+                            <li><a href="">Preguntas frecuentes</a></li>
+                        </ul>
                     </div>
-                @show
-            </main>
+                </div>
+                <div class="col-4 text-center text-dark">
+                    <h6>ACERCA DE</h6>
+                    <div class="col text-center">
+                        <ul>
+                            <li><a href="">Quiénes somos</a></li>
+                            <li><a href="">Nuestro equipo</a></li>
+                            <li><a href="">Nuestro trabaojo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 text-center text-dark">
+                    <h6>AYUDA</h6>
+                    <div class="col text-center">
+                        <ul>
+                            <li><a href="">Centro de ayuda</a></li>
+                            <li><a href="">Centro de cliente</a></li>
+                            <li><a href="">Soporte</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li><a href="">Soporte online</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    @show
+    </footer>
 </div>
 
 </body>

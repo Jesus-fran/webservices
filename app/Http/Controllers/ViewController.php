@@ -45,6 +45,11 @@ class ViewController extends Controller
         return view('sensores', compact('higrometro', 'sen_lumi','minibomba' ));
     }
 
+    public function ViewAvisoPrivacidad()
+    {
+        return view('aviso_privacidad');
+    }
+
     public function ViewLogin()
     {
         return view('login');

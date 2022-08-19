@@ -24,3 +24,4 @@ Route::get('/sensores', [ViewController::class, 'ViewSensores'])->name('sensores
 Route::get('/logout', [ViewController::class, 'Logout'])->name('logout')->middleware('user');
 Route::get('/login', [ViewController::class, 'ViewLogin'])->name('login');
 Route::post('/ini-sesion', [UserController::class, 'login'])->name('ini-sesion');
+Route::get('/aviso-privacidad', [ViewController::class, 'ViewAvisoPrivacidad'])->name('aviso-privacidad');
