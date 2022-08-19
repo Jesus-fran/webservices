@@ -102,3 +102,7 @@
 .text-aviso {
     text-align: justify;
 }
+
+.btn-login {
+    background-color: #1abc9c;
+}

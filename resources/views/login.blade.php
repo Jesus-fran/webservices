@@ -61,7 +61,7 @@
                     </div>
                     
                     <div class="col-12">
-                      <button class="btn btn-success" type="submit">Ingresar</button>
+                      <button class="btn btn-login  hvr-hang " type="submit">Ingresar</button>
                     </div>
                   </form>
                 </div>
