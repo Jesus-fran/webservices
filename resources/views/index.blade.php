@@ -129,6 +129,11 @@
                                     <a class="btn btns-panel btn-login hvr-hang" href="{{ route('sensores') }}">Examinar sensores</a>
                                 </div>
                             </div>
+                            <div class="row align-items-end">
+                                <div class="col-12 text-center">
+                                    <p class="aviso-priv">Para información sobre el uso de sus datos revise nuestro <a href="{{ route('aviso-privacidad') }}">aviso de privacidad</a> y <a href="">Terminos de aviso</a></p>
+                                </div>
+                            </div>
                         </div>
                     @show
                 </main>

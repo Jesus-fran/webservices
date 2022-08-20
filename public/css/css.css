@@ -112,3 +112,11 @@
 .btn-login {
     background-color: #1abc9c;
 }
+
+.aviso-priv {
+    font-size: 9pt;
+}
+
+.aviso-priv a {
+    text-decoration: none;
+}
